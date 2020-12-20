@@ -11,8 +11,8 @@ build a random password's generator.
     - logging
 2. Description:
     - The 'keylogger ' registre the keys that you press, 
-      once execute the script, you need to set a folder that you specify to save the registry file,  
-      if you want a better challenge you can prove:
+      once execute the script, you need to set a folder that you specify to save the registry file.  
+      If you want a better challenge you can prove:
       [this](https://www.thepythoncode.com/article/write-a-keylogger-python)
       
 ## Random passwords generator
@@ -23,7 +23,7 @@ build a random password's generator.
 2. Description:
     - This script consist in 6 options to generate a random password.
     This code is totally open source use this code as you like, like the others.
-    - The password's generated are saved on a file with extension .txt
+    - Passwords generated are saved on a file with extension .txt
 ## Ransomware
 1. Modules requirements:
     - cryptography
