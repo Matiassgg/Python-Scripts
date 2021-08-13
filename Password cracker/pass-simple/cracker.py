@@ -1,4 +1,3 @@
-import time
 import pyautogui
 import subprocess
 import sys
@@ -16,7 +15,6 @@ program_name = "mousepad"
 def crack_password_on(file):
     file_name = "a_name"
     subprocess.Popen([program_name, file_name])
-    time.sleep(5)
     for password in file:
         password = password.replace("\n", "")
         pyautogui.write(password, interval=0.1)
