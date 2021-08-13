@@ -1,0 +1,6 @@
+# Ransomware
+Ransomware/*.key
+Ransomware/__pycache__
+
+# Random passwords
+Random passwords/passwords.txt
